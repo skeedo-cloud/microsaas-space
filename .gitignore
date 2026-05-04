@@ -1,4 +1,12 @@
-```
+```gitignore
+# Dependencies
 node_modules/
-package-lock.json
+
+# Editors
+.vscode/
+
+# Environment
+.env
+.env.local
+*.env.*
 ```
