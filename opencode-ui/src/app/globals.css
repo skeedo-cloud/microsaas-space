@@ -1,0 +1,136 @@
+:root {
+  /* Colors - Brand & Accent */
+  --colors-ink: #201d1d;
+  --colors-ink-deep: #0f0000;
+  --colors-canvas: #fdfcfc;
+  
+  /* Surface */
+  --colors-surface-soft: #f8f7f7;
+  --colors-surface-card: #f1eeee;
+  --colors-surface-dark: #201d1d;
+  --colors-surface-dark-elevated: #302c2c;
+  --colors-hairline: rgba(15, 0, 0, 0.12);
+  --colors-hairline-strong: #646262;
+  
+  /* Text */
+  --colors-charcoal: #302c2c;
+  --colors-body: #424245;
+  --colors-mute: #646262;
+  --colors-stone: #6e6e73;
+  --colors-ash: #9a9898;
+  
+  /* Semantic - Apple HIG */
+  --colors-accent: #007aff;
+  --colors-accent-hover: #0056b3;
+  --colors-accent-active: #004085;
+  --colors-danger: #ff3b30;
+  --colors-danger-hover: #d70015;
+  --colors-danger-active: #a50011;
+  --colors-warning: #ff9f0a;
+  --colors-warning-hover: #cc7f08;
+  --colors-warning-active: #995f06;
+  --colors-success: #30d158;
+  
+  /* Typography - Berkeley Mono with fallbacks */
+  --font-mono: 'Berkeley Mono', 'JetBrains Mono', 'IBM Plex Mono', 'Geist Mono', 
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 
+    'Liberation Mono', 'Courier New', monospace;
+  
+  /* Typography Scale */
+  --typography-display-xl: 38px;
+  --typography-heading-md: 16px;
+  --typography-body-md: 16px;
+  --typography-caption-md: 14px;
+  
+  /* Spacing */
+  --spacing-xxs: 1px;
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 12px;
+  --spacing-lg: 16px;
+  --spacing-xl: 24px;
+  --spacing-xxl: 32px;
+  --spacing-section: 96px;
+  
+  /* Border Radius */
+  --rounded-none: 0px;
+  --rounded-sm: 4px;
+  --rounded-full: 9999px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: var(--font-mono);
+  font-size: var(--typography-body-md);
+  line-height: 1.5;
+  color: var(--colors-ink);
+  background-color: var(--colors-canvas);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Classes */
+.display-xl {
+  font-size: var(--typography-display-xl);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.heading-md {
+  font-size: var(--typography-heading-md);
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 0;
+}
+
+.body-md {
+  font-size: var(--typography-body-md);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.body-strong {
+  font-size: var(--typography-body-md);
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.body-tight {
+  font-size: var(--typography-body-md);
+  font-weight: 500;
+  line-height: 1;
+}
+
+.caption-md {
+  font-size: var(--typography-caption-md);
+  font-weight: 400;
+  line-height: 2;
+}
+
+.button-md {
+  font-size: var(--typography-body-md);
+  font-weight: 500;
+  line-height: 2;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-lg);
+}
+
+.section {
+  padding: var(--spacing-section) 0;
+}
+
+.hairline-divider {
+  border-top: 1px solid var(--colors-hairline);
+}
