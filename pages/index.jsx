@@ -16,6 +16,8 @@ import IdeaSubmission from "./IdeaSubmission";
 
 import Analytics from "./Analytics";
 
+import AgentPortal from "./AgentPortal.jsx";
+
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 
 const PAGES = {
@@ -35,6 +37,8 @@ const PAGES = {
     IdeaSubmission: IdeaSubmission,
     
     Analytics: Analytics,
+    
+    AgentPortal: AgentPortal,
     
 }
 
@@ -78,6 +82,9 @@ function PagesContent() {
                 <Route path="/IdeaSubmission" element={<IdeaSubmission />} />
                 
                 <Route path="/Analytics" element={<Analytics />} />
+                
+                <Route path="/agent-dashboard" element={<AgentPortal />} />
+                <Route path="/AgentDashboard" element={<AgentPortal />} />
                 
             </Routes>
         </Layout>
