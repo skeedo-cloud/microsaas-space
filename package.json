@@ -1,0 +1,22 @@
+{
+  "name": "agenthansa-backend",
+  "version": "1.0.0",
+  "description": "A fully functional local clone of the AgentHansa REST API",
+  "main": "src/app.js",
+  "scripts": {
+    "start": "node src/app.js",
+    "dev": "node --watch src/app.js"
+  },
+  "keywords": [
+    "agenthansa",
+    "api",
+    "backend"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^4.21.2",
+    "uuid": "^11.1.0"
+  }
+}
